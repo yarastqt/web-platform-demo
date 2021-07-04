@@ -1,0 +1,48 @@
+.ListBox {
+  width: 204px;
+  padding: 4px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: inherit;
+  outline: 0;
+}
+
+.ListBox-Item {
+  font-size: var(--typo-control-size-s-font-size);
+  line-height: var(--typo-control-size-s-line-height);
+  font-family: var(--typo-control-font-family);
+  height: var(--control-size-s-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-300);
+  transition:
+    background-color var(--timing-delay-200) var(--timing-fn-default),
+    color var(--timing-delay-200) var(--timing-fn-default);
+  color: var(--black-1900);
+  outline: 0;
+}
+
+.ListBox-Item[data-hovered="true"] {
+  background-color: var(--blue-gray-200);
+}
+
+.ListBox-Item[data-focused="true"] {
+  background-color: var(--blue-gray-200);
+}
+
+.ListBox-Item[data-selected="true"] {
+  background-color: var(--blue-gray-1700);
+  color: var(--black-50);
+}
+
+.ListBox-Item[data-selected="true"][data-hovered="true"] {
+  background-color: var(--blue-gray-1800);
+}
+
+.utilityfocus .ListBox:focus {
+  box-shadow: 0 0 0 2px var(--yellow-900);
+}

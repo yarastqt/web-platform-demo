@@ -1,0 +1,32 @@
+:root {
+  /* units */
+  --control-size-s-height: 32px;
+  /* typo */
+  --typo-control-font-family: 'YS Text', Arial, sans-serif;
+  --typo-control-size-s-font-size: 13px;
+  --typo-control-size-s-line-height: 16px;
+  /* animation */
+  --timing-delay-200: 150ms;
+  --timing-fn-default: ease-in-out;
+  /* border */
+  --border-radius-100: 4px;
+  --border-radius-300: 6px;
+  --border-radius-400: 8px;
+  /* shadows */
+  --shadow-200: 0px 0px 1px rgba(0, 20, 51, 0.3), 0px 4px 12px rgba(0, 20, 51, 0.15);
+  /* color */
+  --black-50: #fff;
+  --black-400: #ccc;
+  --black-1900: #000;
+  --blue-gray-50: #F7F8FA;
+  --blue-gray-100: #F1F2F5;
+  --blue-gray-200: #E6E9F0;
+  --blue-gray-300: #DFE3EB;
+  --blue-gray-600: #C9CEDB;
+  --blue-gray-700: #C1C5D6;
+  --blue-gray-800: #BABFD1;
+  --blue-gray-1700: #404152;
+  --blue-gray-1800: #333342;
+  --yellow-900: #FFCC00;
+  --red-900: #FF0000;
+}

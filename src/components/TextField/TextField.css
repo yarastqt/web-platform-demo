@@ -1,0 +1,52 @@
+.TextField {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: var(--border-radius-400);
+  box-sizing: border-box;
+  height: var(--control-size-s-height);
+  transition: border-color var(--timing-delay-200) var(--timing-fn-default);
+  box-shadow: inset 0 0 0 1px var(--blue-gray-700);
+}
+
+.TextField[data-hovered="true"] {
+  background-color: var(--blue-gray-100);
+}
+
+.TextField:focus-within {
+  background-color: var(--black-50);
+  box-shadow: inset 0 0 0 2px var(--yellow-900);
+}
+
+.TextField-Control {
+  font-family: var(--typo-control-font-family);
+  font-size: var(--typo-control-size-s-font-size);
+  line-height: var(--typo-control-size-s-line-height);
+  outline: 0;
+  color: var(--black-1900);
+  border: 0;
+  padding: 0;
+  background: 0;
+}
+
+.TextField-Button {
+  background: 0;
+  border: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: 0;
+
+  margin-left: 8px;
+  opacity: 0.5;
+}
+
+.TextField-Button:focus,
+.TextField-Button[data-hovered="true"] {
+  opacity: 1;
+}
+
+.TextField-Button[data-pressed="true"] {
+  transform: scale(0.94);
+}

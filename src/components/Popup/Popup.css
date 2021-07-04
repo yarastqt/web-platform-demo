@@ -1,0 +1,7 @@
+.Popup {
+  position: absolute;
+  margin-top: 2px;
+  border-radius: var(--border-radius-400);
+  box-shadow: var(--shadow-200);
+  outline: 0;
+}

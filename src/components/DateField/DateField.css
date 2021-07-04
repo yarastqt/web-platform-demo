@@ -1,0 +1,20 @@
+.DateField-Segment {
+  font-family: var(--typo-control-font-family);
+  font-size: var(--typo-control-size-s-font-size);
+  line-height: var(--typo-control-size-s-line-height);
+  color: var(--black-1900);
+
+  user-select: none;
+  outline: 0;
+
+  caret-color: transparent;
+}
+
+.DateField-Segment:nth-child(odd) {
+  padding: 2px;
+}
+
+.DateField-Segment:focus {
+  background-color: var(--blue-gray-600);
+  border-radius: var(--border-radius-100);
+}

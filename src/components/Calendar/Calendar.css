@@ -1,0 +1,67 @@
+.Calendar {
+  display: inline-table;
+  border-collapse: collapse;
+  width: 252px;
+  font-size: var(--typo-control-size-s-font-size);
+  line-height: var(--typo-control-size-s-line-height);
+  font-family: var(--typo-control-font-family);
+  margin: 16px;
+}
+
+.Cell {
+  padding: 0;
+}
+
+.CellButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  flex: 1 0;
+  min-width: var(--control-size-s-height);
+  min-height: var(--control-size-s-height);
+}
+
+.CellButton[data-today='true'] {
+  color: var(--red-900);;
+  text-decoration: underline;
+}
+
+.CellButton[data-focused='true'] {
+  box-shadow: inset 0 0 0 2px var(--yellow-900);
+}
+
+.CellButton[class][data-selected='true'],
+.CellButton[class][data-range-selection-start='true'] {
+  background-color: var(--red-900);
+  color: var(--black-50);
+}
+
+.CellButton[data-range-selected='true'] {
+  background-color: var(--blue-gray-200);
+}
+
+.CellButton[data-range-preview='true'] {
+  background-color: var(--blue-gray-100);
+}
+
+.CellButton[data-range-selection-start='true'],
+.CellButton[data-range-preview-start='true'] {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.CellButton[data-range-selection-end='true'],
+.CellButton[data-range-preview-end='true'] {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.CellButton[data-outside-view='true'] {
+  opacity: 0.6;
+}
+
+.CellButton[data-disabled='true'] {
+  opacity: 0.3;
+}

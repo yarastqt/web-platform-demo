@@ -1,0 +1,45 @@
+.Button {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  user-select: none;
+  outline: 0;
+  border-radius: var(--border-radius-400);
+  height: var(--control-size-s-height);
+  font-size: var(--typo-control-size-s-font-size);
+  line-height: var(--typo-control-size-s-line-height);
+  font-family: var(--typo-control-font-family);
+  padding: 0 10px;
+  background-color: var(--blue-gray-100);
+  color: var(--black-1900);
+  transition:
+    background-color var(--timing-delay-200) var(--timing-fn-default),
+    color var(--timing-delay-200) var(--timing-fn-default);
+}
+
+.Button[data-disabled="true"] {
+  cursor: not-allowed;
+  background-color: var(--blue-gray-50);
+  color: var(--black-400);
+}
+
+.Button .Button-Text {
+  padding: 0 8px;
+}
+
+.utilityfocus .Button:focus {
+  box-shadow: 0 0 0 2px var(--yellow-900);
+}
+
+.Button[data-hovered="true"] {
+  background-color: var(--blue-gray-200);
+}
+
+.Button[data-pressed="true"] {
+  background-color: var(--blue-gray-300);
+}
